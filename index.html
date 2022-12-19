@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Legend of Zelda™: Tears of the Kingdom</title>
+
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
-    
+    <section class="s-hero">
+        <div class="container">
+                <img src="img/s-hero-overlay.png" alt="" class="link">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="info">
+                <div class="platforms">
+                    <span>DISPONÍVEL PARA: </span>
+                    <a href="https://www.nintendo.com/pt-br/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/ns-logo.svg" alt="Nintendo Switch">
+                    </a>
+                </div>
+                <button class="trailer" onclick="trailer()">
+                    <div class="play-button">
+                        <img src="img/play.png" alt="" class="play">
+                    </div>
+                    <div class="trailer-thumb">
+                        <img src="img/trailer-thumb.jpeg" alt="" class="thumb">
+                        <img src="img/trailer-gif.gif" alt="" class="gif">
+                    </div>
+                </button>
+            </div>
+            <div class="yt-trailer" id="trailer">
+                <div class="overlay">
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2SNF4M_v7wc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="close" onclick="trailer()"><img src="img/close.png" alt="Fechar trailer"></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
